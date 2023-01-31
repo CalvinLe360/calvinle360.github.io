@@ -74,60 +74,60 @@ export const userinfo = {
         visible: true, //set this to false if you want to omit this section
         educationList: [
             {
-                time: "May - Oct 2020", //timespan
-                title: "Degree name", //eg. BTech in Compuster Engineering
-                organization: "School Name", //eg. VJTI, Mumbai
-                description: "Lorem ipsum dolor sit amet consectetur", //eg. secured a cgpa of 9.25 in all sems appeared in so far
+                time: "2019 - 2022", //timespan
+                title: "Bachelor of Maths and Computer Sciences", //eg. BTech in Compuster Engineering
+                organization: "University of Adelaide", //eg. VJTI, Mumbai
+                description: "Foundation and expertise in Computer Science", //eg. secured a cgpa of 9.25 in all sems appeared in so far
             },
             {
-                time: "May - Oct 2020",
-                title: "Degree name",
-                organization: "School Name",
-                description: "Lorem ipsum dolor sit amet consectetur",
+                time: "May - Dec 2018",
+                title: "High School Student",
+                organization: "Mawson Lakes Endeavour College",
+                description: "Allowed great interest in computer technology.",
             },
-            {
-                time: "May - Oct 2020",
-                title: "Degree name",
-                organization: "School Name",
-                description: "Lorem ipsum dolor sit amet consectetur",
-            },
+            // {
+            //     time: "May - Oct 2020",
+            //     title: "Degree name",
+            //     organization: "School Name",
+            //     description: "Lorem ipsum dolor sit amet consectetur",
+            // },
         ],
     },
     experience: {
         visible: true, //set this to false if you want to omit this section
         experienceList: [
             {
-                company: "Dunder Mifflin", //company name eg.Microsoft
+                company: "Arcadia Redux", //company name eg.Microsoft
                 companylogo:
-                    "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/why-did-steve-carell-leave-the-office-1585597666.jpg?crop=0.563xw:0.844xh;0.287xw,0.128xh&resize=480:*", //companylogo
-                position: "Regional Manager", //post you held eg.Senior SDE
-                time: "March 2020 - May 2020", //timespan
+                    "https://avatars.githubusercontent.com/u/46830822?s=280&v=4", //companylogo
+                position: "Software Engineer", //post you held eg.Senior SDE
+                time: "Dec 2020 - Ongoing", //timespan
                 description:
-                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum", //eg. spearheaded the graphics team in designing SASS product UIs
+                    "Creating and Maintaining a number of games by the company, such as 12v12, Custom Hero Clash, and Overthrow 3.0", //eg. spearheaded the graphics team in designing SASS product UIs
             },
             {
-                company: "Dunder Mifflin",
+                company: "Double Edge Studios",
                 companylogo:
-                    "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/why-did-steve-carell-leave-the-office-1585597666.jpg?crop=0.563xw:0.844xh;0.287xw,0.128xh&resize=480:*",
-                position: "Regional Manager",
-                time: "March 2020 - May 2020",
+                    "https://avatars.githubusercontent.com/u/99471117?s=200&v=4",
+                position: "Software Engineer",
+                time: "Jan 2022 - Ongoing",
                 description:
-                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum",
+                    "Assisted in the development of the highly successful game Ability Arena with heavy focus on software mechanics and production efficacy.",
             },
             {
-                company: "Dunder Mifflin",
+                company: "Acacia Systems",
                 companylogo:
-                    "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/why-did-steve-carell-leave-the-office-1585597666.jpg?crop=0.563xw:0.844xh;0.287xw,0.128xh&resize=480:*",
-                position: "Regional Manager",
-                time: "March 2020 - May 2020",
+                    "https://media.licdn.com/dms/image/C510BAQGqRckgaWPPPg/company-logo_200_200/0/1525800328507?e=2147483647&v=beta&t=bN_PlaxMWCFF7bWVZWqCCXYuRI5IVEeKQbTc9BcMnNE",
+                position: "Software Engineer",
+                time: "February 2023 - Ongoing",
                 description:
-                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum",
+                    "Building and maintaining software and technology used to assist the Australian Defence with Machine Learning, Unmanned Systems, and Advanced Data Processing.",
             },
         ],
     },
     blogs: {
         //set this to false if you want to omit this section
-        visible: true,
+        visible: false,
     },
 };
 
