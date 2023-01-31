@@ -12,7 +12,7 @@ const Footer = ({ currentTheme }) => {
             }}
         >
             <div className={styles.footertable}>
-                <Link href="/">
+                <Link legacyBehavior={true} href="/">
                     <a>
                         <h2 className={styles.footerlogo}>
                             {userinfo.logoText}
@@ -24,7 +24,11 @@ const Footer = ({ currentTheme }) => {
                     {userinfo.socials
                         ? userinfo.socials.map((social, key) => {
                               return (
-                                  <Link href={social.link} key={key}>
+                                  <Link
+                                      legacyBehavior={true}
+                                      href={social.link}
+                                      key={key}
+                                  >
                                       <a>
                                           <li>{social.type}</li>
                                       </a>
@@ -33,6 +37,7 @@ const Footer = ({ currentTheme }) => {
                           })
                         : null}
                     <Link
+                        legacyBehavior={true}
                         href={`mailto:${
                             userinfo.contact.email ? userinfo.contact.email : ""
                         }`}
@@ -44,22 +49,22 @@ const Footer = ({ currentTheme }) => {
                 </ul>
                 <ul>
                     <li className={styles.listHeading}>Pages</li>
-                    <Link href="/">
+                    <Link legacyBehavior={true} href="/">
                         <a>
                             <li>Home</li>
                         </a>
                     </Link>
-                    <Link href="/#about">
+                    <Link legacyBehavior={true} href="/#about">
                         <a>
                             <li>About</li>
                         </a>
                     </Link>
-                    <Link href="/work">
+                    <Link legacyBehavior={true} href="/work">
                         <a>
                             <li>Work</li>
                         </a>
                     </Link>
-                    <Link href="/contact">
+                    <Link legacyBehavior={true} href="/contact">
                         <a>
                             <li>Contact</li>
                         </a>

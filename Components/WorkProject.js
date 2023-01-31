@@ -37,7 +37,6 @@ const WorkProject = ({ currentTheme, project, id }) => {
         } else {
             setIndex(index + 1);
         }
-        console.log(project.photo[index].src);
     };
 
     const back = () => {
@@ -46,7 +45,6 @@ const WorkProject = ({ currentTheme, project, id }) => {
         } else {
             setIndex(index - 1);
         }
-        console.log(project.photo[index].src);
     };
 
     const handlers = useSwipeable({
@@ -93,10 +91,12 @@ const WorkProject = ({ currentTheme, project, id }) => {
                         }}
                     >
                         <Image
-                            src={project.photo[index].src}
+                            src={project.photo[index]}
                             alt="thumbnail image"
-                            height="300"
-                            width="500"
+                            style={{
+                                height: "100%",
+                                width: "100%",
+                            }}
                         />
                         <button
                             onClick={back}
@@ -133,7 +133,10 @@ const WorkProject = ({ currentTheme, project, id }) => {
                                 }}
                             >
                                 {project.githubLink !== "" ? (
-                                    <Link href={project.githubLink}>
+                                    <Link
+                                        legacyBehavior={true}
+                                        href={project.githubLink}
+                                    >
                                         <a>
                                             <FontAwesomeIcon
                                                 icon={faGithubAlt}
@@ -157,7 +160,10 @@ const WorkProject = ({ currentTheme, project, id }) => {
                                 }}
                             >
                                 {project.projectLink !== "" ? (
-                                    <Link href={project.projectLink}>
+                                    <Link
+                                        legacyBehavior={true}
+                                        href={project.projectLink}
+                                    >
                                         <a>
                                             <FontAwesomeIcon
                                                 icon={faTelegramPlane}
