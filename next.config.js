@@ -1,11 +1,8 @@
+const isProd = process.env.NODE_ENV === "production";
+
 module.exports = {
-    reactStrictMode: true,
+    assetPrefix: isProd ? "/calvinle360.github.io/" : "",
     images: {
         unoptimized: true,
-        domains: [
-            "cdn-images-1.medium.com",
-            "miro.medium.com",
-            "res.cloudinary.com",
-        ],
     },
 };
