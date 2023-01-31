@@ -102,10 +102,12 @@ const WorkProject = ({ currentTheme, project, id }) => {
                             onClick={back}
                             style={{
                                 position: "absolute",
-                                top: "50%",
                                 left: "10px",
                                 color: "white",
                                 fontSize: "20px",
+                                height: "100%",
+                                width: "30%",
+                                textAlign: "left",
                             }}
                         >
                             &lt;
@@ -114,10 +116,12 @@ const WorkProject = ({ currentTheme, project, id }) => {
                             onClick={ahead}
                             style={{
                                 position: "absolute",
-                                top: "50%",
                                 right: "10px",
                                 color: "white",
                                 fontSize: "20px",
+                                height: "100%",
+                                width: "30%",
+                                textAlign: "right",
                             }}
                         >
                             &gt;

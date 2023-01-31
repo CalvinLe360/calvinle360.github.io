@@ -1,17 +1,13 @@
 // import project demo images as follows.
-import ABILITYARENA_1 from "../public/projects/AbilityArena_1.jpg";
-import ABILITYARENA_2 from "../public/projects/AbilityArena_2.jpg";
-import ROCKPAPERSCISSORS_1 from "../public/projects/RockPaperScissor_1.png";
-import ROCKPAPERSCISSORS_2 from "../public/projects/RockPaperScissor_2.png";
-import ROCKPAPERSCISSORS_3 from "../public/projects/RockPaperScissor_3.png";
-import WDC_1 from "../public/projects/WDC_1.png";
-import OT3_1 from "../public/projects/ot3_1.jpg";
-import OT3_2 from "../public/projects/ot3_2.jpg";
-import OT3_3 from "../public/projects/ot3_3.jpg";
-import OT3_4 from "../public/projects/ot3_4.jpg";
-import MAPTEK from "../public/projects/MAPTEK.png";
-import CODE1_1 from "../public/projects/CODE1_1.png";
-import CODE1_2 from "../public/projects/CODE1_2.png";
+import {
+    ABILITYARENA,
+    ROCKPAPERSCISSORS,
+    WDC,
+    OT3,
+    CODE1,
+    RPG,
+    WEBSITE,
+} from "./images.js";
 
 // first 3 projects are visible on the homepage while all are visible on the work page.
 
@@ -25,7 +21,7 @@ export const projects = [
         githubLink: "", //github repo link
         projectLink: "https://www.abilityarena.com/", //deployed project link
         tech: ["TypeScript"], //techstack of the project, it is advisavble to mention only upto 3 technologies here to maintain the ui
-        photo: [ABILITYARENA_1, ABILITYARENA_2], //list of names of images from above imports.
+        photo: ABILITYARENA, //list of names of images from above imports.
     },
     {
         name: "Overthrow 3.0", //project name
@@ -35,7 +31,7 @@ export const projects = [
         projectLink:
             "https://steamcommunity.com/sharedfiles/filedetails?id=2760533777", //deployed project link
         tech: ["Lua", "JavaScript"], //techstack of the project, it is advisavble to mention only upto 3 technologies here to maintain the ui
-        photo: [OT3_1, OT3_2, OT3_3, OT3_4], //list of names of images from above imports.
+        photo: OT3, //list of names of images from above imports.
     },
     {
         name: "Rock-Paper-Scissors Image Recognition Competition",
@@ -46,7 +42,16 @@ export const projects = [
         projectLink:
             "https://github.com/CalvinLe360/RockPaperScissors-ComputerVision",
         tech: ["Python"],
-        photo: [ROCKPAPERSCISSORS_1, ROCKPAPERSCISSORS_2, ROCKPAPERSCISSORS_3],
+        photo: ROCKPAPERSCISSORS,
+    },
+    {
+        name: "My Portfolio Website",
+        description:
+            "Any project in any discipline will always come with struggles and frustration, but the end result will always wrap up the experience with gratification.",
+        githubLink: "https://github.com/CalvinLe360/calvinle360.github.io",
+        projectLink: "/",
+        tech: ["Next.JS", "CSS"],
+        photo: WEBSITE,
     },
     {
         name: "Remapping King Solomon's Mine",
@@ -55,7 +60,7 @@ export const projects = [
         githubLink: "",
         projectLink: "",
         tech: ["Python"],
-        photo: [MAPTEK, CODE1_1, CODE1_2],
+        photo: CODE1,
     },
     {
         name: "Covid-Tracker Website",
@@ -64,6 +69,15 @@ export const projects = [
         githubLink: "",
         projectLink: "",
         tech: ["Vue", "MySQL", "Google API", "Node.JS", "CSS"],
-        photo: [WDC_1],
+        photo: WDC,
+    },
+    {
+        name: "2D RPG",
+        description:
+            "C++ turn-based game that runs in the command prompt, where the player character must survive in a randomly generated world against an endless onslaught of monsters by finding powerups. Utilised object-oriented principles such as inheritance, and contains artificial intelligence.",
+        githubLink: "https://github.com/CalvinLe360/2d-Rpg-2020",
+        projectLink: "https://github.com/CalvinLe360/2d-Rpg-2020",
+        tech: ["Vue", "MySQL", "Google API", "Node.JS", "CSS"],
+        photo: RPG,
     },
 ];
