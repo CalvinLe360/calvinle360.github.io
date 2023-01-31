@@ -37,7 +37,6 @@ const WorkProject = ({ currentTheme, project, id }) => {
         } else {
             setIndex(index + 1);
         }
-        console.log(project.photo[index].src);
     };
 
     const back = () => {
@@ -92,7 +91,7 @@ const WorkProject = ({ currentTheme, project, id }) => {
                         }}
                     >
                         <Image
-                            src={project.photo[index]}
+                            src={project.photo[index].src}
                             alt="thumbnail image"
                             height="300"
                             width="500"
