@@ -1,230 +1,222 @@
-# Astro Modern Personal Website
-
-![Astro Modern Personal Website](public/social_img.png)
-
-Modern Personal Website Template with Project Section, CV Section, Paginated Blog, RSS Feed, SEO Friendly, Visual themes and Responsive Desing for Astro framework.
-
-## Demo
-
-View a live demo of the [Astro Modern Personal Website](https://astro-modern-personal-website.netlify.app/)
-
-
-## Installation
-
-Run the following command in your terminal
-
-``` bash
-npm install
-```
-
-Once the packages are installed you are ready to run astro. Astro comes with a built-in development server that has everything you need for project development. The astro dev command will start the local development server so that you can see your new website in action for the very first time.
-
-``` bash
-npm run dev
-```
-
-## Tech Stack
-
-- [Astro](https://astro.build)
-- [tailwindcss](https://tailwindcss.com/)
-- [DaisyUI](https://daisyui.com/)
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <h1 align="center">NextJS Portfolio Template</h1>
+  <p align="center">
+    Portfolio website template!
+    <br />
+    <a href="https://michaelscott-nextjstemp.vercel.app/">View Demo</a>
+    ·
+    <a href="https://github.com/AsavariA/nextjs-portfolio-template/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/AsavariA/nextjs-portfolio-template/issues">Request Feature</a>
+  </p>
+</p>
 
 
 
-## Project Strucutre
+<!-- TABLE OF CONTENTS -->
+<details open="open">
+  <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#sections-available">Sections Available</a></li>
+        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#demos">Demos</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li>
+	    <a href="#usage">Usage</a>
+	    <ul>
+        <li><a href="#user-info">User Info</a></li>
+        <li><a href="#blogs">Blogs</a></li>
+        <li><a href="#setting-up-images">Setting up Images</a></li>
+        <li><a href="#setting-up-themes">Setting up Themes</a></li>
+        <li><a href="#setting-up-contact-form">Setting up Contact Form</a></li>
+      </ul>
+	</li>
+	<li><a href="#deployment">Deployment</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+  </ol>
+</details>
 
-``` php
-├── src/
-│   ├── components/
-│   │   ├── cs/
-│   │   │   ├── TimeLine
-│   │   ├── BaseHead.astro
-│   │   ├── Card.astro
-│   │   ├── Footer.astro
-│   │   ├── Header.astro
-│   │   └── HorizontalCard.jsx
-│   │   └── SideBar.jsx
-│   ├── layouts/
-│   │   └── BaseLayout.astro
-│   │   └── PostLayout.astro
-│   └── pages/
-│   │   ├── blog/
-│   │   │   ├── [page].astro
-│   │   │   ├── post1.md
-│   │   │   ├── post2.md
-│   │   │   └── post3.md
-│   │   └── cv.astro
-│   │   └── index.astro
-│   │   └── projects.astro
-│   │   └── rss.xml.js
-│   └── styles/
-│       └── global.css
-├── public/
-│   ├── favicon.svg
-│   └── social-image.png
-│   └── sprofile.jpg
-│   └── social_img.webp
-├── astro.config.mjs
-├── tailwind.config.cjs
-├── package.json
-└── tsconfig.json
-```
 
-### Components usage
 
-#### Layout Components
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
-The `BaseHead`, `Footer`, `Header` and `SideBar` components are already included in the layout sistem. To change the website content you can edit the content of this componenets.
+Making a Portfolio website from scratch can be a tedious process. This repository solves that problem. How? Well, it is a easy-to-use portfolio template! You can use it by following a few simple instructions given below. Feel free to suggest changes and features too!
 
-##### SideBar
+### Sections Available
 
-In the Sidebar you can change the links to all your website pages.
+✔️ Landing Page - greeting\
+✔️ Work section\
+✔️ Capabilities\
+✔️ Education\
+✔️ About \
+✔️ Projects\
+✔️ Work Experience\
+✔️ Blogs - Custom, Medium and DevTo support\
+✔️ Contact me\
+✔️ Socials
 
-You can change your avatar shape using [mask classes](https://daisyui.com/components/mask/).
+### Built With
+🔧 [NextJS](https://nextjs.org/)\
+🔧 [Chakra UI](https://chakra-ui.com/)
 
-The used social-icons are SVG form [BoxIcons](https://boxicons.com/) pack.
+### Demos
+To view a demo, [click here](https://michaelscott-nextjstemp.vercel.app/)\
+To view a live example, [click here](https://asavariambavane.vercel.app/)
 
-#### TimeLine
+<!-- GETTING STARTED -->
+## Getting Started
 
-The timeline components are used to conform the CV.
+To get a local copy up and running follow these simple steps.
 
-``` html
- <div class="time-line-container">
-    <TimeLineElement
-      title="Element Title"
-      subtitle="Subtitle"
-      desc="Description"
-    />
-    ...
-</div>
-```
+### Prerequisites
+npm - Latest version of npm works the best with this project. Run the following command to install it.
+  ```sh
+  npm -v //checks npm version
+  npm install npm@latest -g //installs latest npm version
+  ```
 
-#### Card & HorizontalCard
-``` html
-   <HorizontalCard
-      title="Card Title"
-      img="imge_url"
-      desc="Description"
-      url="Link URL"
-      target="Optional link target (_blank default)"
-      badge="Optional badge"
-      tags={['Array','of','tags']}
-    />
-```
+### Installation
 
-#### HorizontalCard Shop Item
+1. Clone the repo
+   ```sh
+   git clone https://github.com/AsavariA/nextjs-portfolio-template.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
 
-This compoenet is already included in the Store layout of the template. In case you want to use it in other place this are the props.
-``` html
-   <HorizontalShopItem
-        title= "Item Title"
-        img= "imge_url"
-        desc= "Item description"
-        pricing= "current_price"
-        oldPricing= "old_price"
-        checkoutUrl= "external store checkout url"
-        badge="Optional badge"
-        details= true # show or hide details btn (default is true)
-        url= "item details url"
-        custom_link= "Custom link url"
-        custom_link_label= "Cutom link btn label" target="Optional link target (_self default)"
-      />
-```
 
-### Layouts
 
-Include `BaseLayout` in each page you add and `PostLayout` to your post pages.
+<!-- USAGE EXAMPLES -->
+## Usage
+These are instructions to use the project once you have cloned it. Follow them step by step for the best experience. Comments are mentioned in the files as guides.
 
-### Pages
+### User Info
+Go to the file ***userinfo.js*** inside the ***Constants*** folder. Fill up this file like you are filling up a form.
 
-#### Blog
+ 1. logoText
+ 2. contact - email, phone(leave blank if not willing to use), countrycode
+ 3. socials - follow the json format
+ 4. greeting - title, subtitle
+ 5. capabilities - follow the json format
+ 6. about - content, resume link ( can be drive link etc )
+ 7. education - follow the json format
+ 8. experience - follow the json format
+ 9. blogs - if you want this section in your website, set it true, otherwise false. If true, follow the instructions in <a href="#blogs">blog section</a>
+ 10. projects - go to  **Constants > projects.js** and follow the json format. Import images as mentioned in the imports.
+ 11. headings - you can customise all the headings in the template with this. 
+ 12. ctas - you can customise all the ctaTexts in the template with this. 
 
-Add your `md` blog post in the `/pages/blog/` folder.
+### Blogs
+This instruction set is only applicable if blogs are set to visible. The blogs section provides 3 kinds of support. **Custom blogs**, importing **medium blogs**, or importing **devto blogs**.
+ 
+ 1. Go to **Constants > blogs.js**  
+ 2. You will be able to see 3 different exports. Choose the one you want and comment out the others.
+ 3. If your choice is **Custom blogs**, fill in the details as shown in json format.
+ 4. If your choice is **Medium blogs**, then uncomment the medium blogs export down below and fill in your **medium username**.
+ 5. Now move to **Components > Work.js**.
+ 6. You will see three commented out sections each with a useEffect and heading ***MEDIUM BLOGS SUPPORT***
+ 7. Uncomment the useEffect in the section you want and comment the other two out.
+ 8. You are set to import your medium blogs now!
+ 9. Follow the steps from 4 - 8 but with DevTo details if your choice is DevTo blogs.
 
-##### [page].astro
+### Setting up Images
+There are only 3 images you need to set up externally. These images have to have a particular name and format and location. 
 
-The `[page].astro` is the route to work with the paginated post list. You can change there the number of items listed for each page and the pagination button labels.
+<ol>
+    <li>
+      Landing Page Background Image
+      <ul>
+        <li>name - background</li>
+        <li>type - .jpg</li>
+        <li>filename - background.jpg</li>
+        <li>location - root > styles</li>
+      </ul>
+    </li>
+    <li>
+      About Section Background Image
+      <ul>
+        <li>name - about</li>
+        <li>type - .jpg</li>
+        <li>filename - about.jpg</li>
+         <li>location - root > styles</li>
+      </ul>
+    </li>
+    <li>
+      Favicon Image
+      <ul>
+        <li>name - favicon</li>
+        <li>type - .jpg</li>
+        <li>filename - favicon.jpg</li>
+         <li>location - root > public</li>
+      </ul>
+    </li>
+  </ol>
 
-##### Post format
-Add code with this format in the top of each post file.
-```
----
-layout: "../../layouts/PostLayout.astro"
-title: "Post Title"
-description: "Description"
-pubDate: "Post date format(Sep 10 2022)"
-heroImage: "Post Hero Image URL"
----
-```
-#### Shop
+### Setting up Themes
+Go to the file ***theme.js*** inside the folder ***Constants***.
+You can change the colors as per your wish or leave the theme as it is. Make sure to keep all the fields intact because skipping any field can lead to errors.
 
-Add your `md` item in the `/pages/shop/` folder.
 
-##### [page].astro
+### Setting up Contact Form
+For this step, you will need to create a **new google account** which will send you the form data. Need for a new account - well, it is advisable to use this new account only for this purpose so as to **prevent giving this template access** to your personal emails ( which are on your original email account ). \
 
-The `[page].astro` is the route to work with the paginated item list. You can change there the number of items listed for each page and the pagination button labels. The shop will render all `.md` files you incle inside this folder.
+Once you have made your account, make sure you have selected that account and go to [this link](https://myaccount.google.com/lesssecureapps). **Allow** the access.\
 
-##### Item format
-Add code with this format in the top of each item file.
-``` js
----
-layout: "../../layouts/StoreItemLayout.astro"
-title: "Demo Item 1"
-description: "Item description"
-heroImage: "Item img url"
-details: true // show or hide details btn
-custom_link_label: "Custom btn link label"
-custom_link: "Custom btn link"
-pubDate: "Sep 15 2022"
-pricing: "$15"
-oldPricing: "$25.5"
-badge: "Featured"
-checkoutUrl: "https://checkouturl.com/"
----
-```
-#### Static pages
+Now go to the **test.env** file. Rename this file to only **.env**\
+*If your project is on github, please make sure to exclude this file from github ( put it in gitignore ) since it contains private / environmental variables.*
 
-The other pages inlcuded in the template are static pages. The `index` page belong to the root page. You can add your pages directly in the `/pages` folder and then add a link to that pages in the `sidebar` component.
+  ```
+//type in all data without the < and > signs.
 
-Feel free to modify the content included in the pages that the template contains or add the ones you need.
+  PASSWORD = <sender-mail-password> //password of newly created account
+SENDER = <sender-mail> //email address of newly created account
+TO = <reciever-mail> //email address of your personal account (which will be reciever of data in this case)
+  ```
 
-### Theming
+**Contact form is now set up!**
 
-For change the template theme change the `data-theme` atribute of the `<html>` tag in `BaseLayout.astro` file.
+### Deployment
+To check if your website is running the way you wish, run the following command to start it locally on localhost:3000\
+`npm run dev`
 
-You can chose among 30 themes available or create your custom theme. See themes available [here](https://daisyui.com/docs/themes/).
+To deploy your portfolio, you can use any of the following ways.
 
-## Sitemap
+ - Vercel - this is the most advisable platform to deploy your nextjs applications because they are the building company and provide the best support for all nextjs websites.
+ - Netlify - Use the exclusive nextjs support on netlify to deploy your site.
+ 
+Both of these can be used directly through github and therefore any new changes and updates to your project repository will be updated immediately in the deployment. There are other ways and platforms to deploy your portfolio too.
 
-The Sitemap is generated automatically when you build your website in the root of the domain. Please update the `robots.txt` file in the public folder with your site name URL for the Sitemap.
-
-## Deploy
-
-You can deploy your site on your favorite static hosting service such as Vercel, Netlify, GitHub Pages, etc.
-
-The configuration for the deployment varies depending on the platform where you are going to do it. See the [official Astro information](https://docs.astro.build/en/guides/deploy/) to deploy your website.
-
-> **⚠️ CAUTION** </br>
-> The Blog pagination of this template is implemented using dynamic route parameters in its filename and for now this format is incompatible with SSR deploy configs, so please use the default static deploy options for your deployments.
-
+<!-- CONTRIBUTING -->
 ## Contributing
 
-Suggestions and pull requests are welcomed! Feel free to open a discussion or an issue for a new feature request or bug.
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-One of the best ways of contribute is to grab a [bug report o feature suggestion](https://github.com/manuelernestog/astro-modern-personal-website/issues) that has been marked `accepted` and dig in.
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-Please be wary of working on issues *not* marked as `accepted`. Just because someone has created an issue doesn't mean we'll accept a pull request for it.
-
+<!-- LICENSE -->
 ## License
 
-Astro Modern Personal Website is licensed under the MIT license — see the [LICENSE](https://github.com/manuelernestog/astro-modern-personal-website/blob/main/LICENSE) file for details.
-
-## Contributors
-
-<a href="https://github.com/manuelernestog/astro-modern-personal-website/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=manuelernestog/astro-modern-personal-website" />
-</a>
-
-Made with [contrib.rocks](https://contrib.rocks).
+Distributed under the MIT License.
 
 
