@@ -77,7 +77,7 @@ export const projects = [
             "C++ turn-based game that runs in the command prompt, where the player character must survive in a randomly generated world against an endless onslaught of monsters by finding powerups. Utilised object-oriented principles such as inheritance, and contains artificial intelligence.",
         githubLink: "https://github.com/CalvinLe360/2d-Rpg-2020",
         projectLink: "https://github.com/CalvinLe360/2d-Rpg-2020",
-        tech: ["Vue", "MySQL", "Google API", "Node.JS", "CSS"],
+        tech: ["C++"],
         photo: RPG,
     },
 ];
