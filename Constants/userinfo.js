@@ -43,26 +43,31 @@ export const userinfo = {
         //For aesthetics, it is advisable for you to mention upto 4 catgeories links only.
         //For aesthetics, it is advisable for you to keep similar number of skills in each category
         {
-            category: "Category", // eg.frontend, backend, devops etc
-            skills: ["Skillset1", "Skillset1", "Skillset1"], //eg. react, html, python etc.
+            category: "Web Development",
+            skills: ["Vue", "MySQL", "CSS"],
         },
         {
-            category: "Category",
-            skills: ["Skillset2", "Skillset2", "Skillset2"],
+            category: "General Programming", // eg.frontend, backend, devops etc
+            skills: ["TypeScript", "Python", "C++", "C#", "Lua"], //eg. react, html, python etc.
         },
         {
-            category: "Category",
-            skills: ["Skillset3", "Skillset3", "Skillset3"],
+            category: "Protestant Leadership",
+            skills: [
+                "Sermon Readings",
+                "Demon Exorcisms",
+                "Holy Rituals",
+                "Weddings and Baptisms",
+            ],
         },
-        {
-            category: "Category",
-            skills: ["Skillset4", "Skillset4", "Skillset4"],
-        },
+        // {
+        //     category: "Category",
+        //     skills: ["Skillset4", "Skillset4", "Skillset4"],
+        // },
     ],
     about: {
         //this text goes at the bottom of your home page.
         content:
-            "An experienced programmer aspiring to become even greater.\nI first started building applications in C# through Visual Studio. From this, it allowed me to build my foundation of problem solving, expanding my knowledge through fields such as web development and back-end development.\nI am eager to learn, and interested in Artificial Intelligence; some of my projects work with statistics to formulate bot decisions, while others use a general decision based algorithm to drive a variety of unique bots.\n\nCurrently, I am completing my Bachelors of Computer Science, while also working part time in the gaming industry, using both Lua and Typescript to code for games played by over half a million people.",
+            "An experienced programmer aspiring to become even greater.\nI first started building applications in C# through Visual Studio. From this, it allowed me to build my foundation of problem solving, expanding my knowledge through fields such as web development and back-end development.\nI am eager to learn, and interested in Artificial Intelligence; some of my projects work with statistics to formulate bot decisions, while others use a general decision based algorithm to drive a variety of unique bots. I've recently completed my Bachelor of Mathematical and Computer Sciences, during which I've worked part time in the gaming industry, using both Lua and Typescript to code for games played by over half a million people.",
         resume: "/", //link your resume here. it can be drive link or any other link
     },
     education: {
