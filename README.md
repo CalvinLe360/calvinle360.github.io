@@ -1,6 +1,6 @@
 ## About The Project
 
-This is a portfolio website created with a template by [Asavari Ambavane](https://github.com/AsavariA).
+This is a portfolio website created with a template by [Asavari Ambavane](https://github.com/AsavariA). ([Link to the template](https://github.com/AsavariA/nextjs-portfolio-template))
 
 It features a culmination of my work and career over the past few years.
 
