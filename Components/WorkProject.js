@@ -37,6 +37,7 @@ const WorkProject = ({ currentTheme, project, id }) => {
         } else {
             setIndex(index + 1);
         }
+        console.log(project.photo[index].src);
     };
 
     const back = () => {
@@ -45,6 +46,7 @@ const WorkProject = ({ currentTheme, project, id }) => {
         } else {
             setIndex(index - 1);
         }
+        console.log(project.photo[index].src);
     };
 
     const handlers = useSwipeable({
