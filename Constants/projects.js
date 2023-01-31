@@ -9,6 +9,9 @@ import OT3_1 from "../public/projects/ot3_1.jpg";
 import OT3_2 from "../public/projects/ot3_2.jpg";
 import OT3_3 from "../public/projects/ot3_3.jpg";
 import OT3_4 from "../public/projects/ot3_4.jpg";
+import MAPTEK from "../public/projects/MAPTEK.png";
+import CODE1_1 from "../public/projects/CODE1_1.png";
+import CODE1_2 from "../public/projects/CODE1_2.png";
 
 // first 3 projects are visible on the homepage while all are visible on the work page.
 
@@ -44,6 +47,15 @@ export const projects = [
             "https://github.com/CalvinLe360/RockPaperScissors-ComputerVision",
         tech: ["Python"],
         photo: [ROCKPAPERSCISSORS_1, ROCKPAPERSCISSORS_2, ROCKPAPERSCISSORS_3],
+    },
+    {
+        name: "Remapping King Solomon's Mine",
+        description:
+            "Designed a Python program in partnership with Maptek to assist the remapping of an input grid to assist companies in mining gold. Performance of the program is prioritized, but working code is a must. Agile methodology was utilized along with fortnightly contact with Maptek to regularly check on progress and update the program's goals, with some assistance through discussions and questions.",
+        githubLink: "",
+        projectLink: "",
+        tech: ["Python"],
+        photo: [MAPTEK, CODE1_1, CODE1_2],
     },
     {
         name: "Covid-Tracker Website",
