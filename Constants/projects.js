@@ -1,14 +1,14 @@
 // import project demo images as follows.
-import ABILITYARENA_1 from "../public/AbilityArena_1.jpg";
-import ABILITYARENA_2 from "../public/AbilityArena_2.jpg";
-import ROCKPAPERSCISSORS_1 from "../public/RockPaperScissor_1.png";
-import ROCKPAPERSCISSORS_2 from "../public/RockPaperScissor_2.png";
-import ROCKPAPERSCISSORS_3 from "../public/RockPaperScissor_3.png";
-import WDC_1 from "../public/WDC_1.png";
-import OT3_1 from "../public/ot3_1.jpg";
-import OT3_2 from "../public/ot3_2.jpg";
-import OT3_3 from "../public/ot3_3.jpg";
-import OT3_4 from "../public/ot3_4.jpg";
+import ABILITYARENA_1 from "../styles/projects/AbilityArena_1.jpg";
+import ABILITYARENA_2 from "../styles/projects/AbilityArena_2.jpg";
+import ROCKPAPERSCISSORS_1 from "../styles/projects/RockPaperScissor_1.png";
+import ROCKPAPERSCISSORS_2 from "../styles/projects/RockPaperScissor_2.png";
+import ROCKPAPERSCISSORS_3 from "../styles/projects/RockPaperScissor_3.png";
+import WDC_1 from "../styles/projects/WDC_1.png";
+import OT3_1 from "../styles/projects/ot3_1.jpg";
+import OT3_2 from "../styles/projects/ot3_2.jpg";
+import OT3_3 from "../styles/projects/ot3_3.jpg";
+import OT3_4 from "../styles/projects/ot3_4.jpg";
 
 // first 3 projects are visible on the homepage while all are visible on the work page.
 
