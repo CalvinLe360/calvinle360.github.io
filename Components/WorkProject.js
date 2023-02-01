@@ -93,6 +93,7 @@ const WorkProject = ({ currentTheme, project, id }) => {
                         <Image
                             src={project.photo[index]}
                             alt="thumbnail image"
+                            layout="responsive"
                         />
                         <button
                             onClick={back}
