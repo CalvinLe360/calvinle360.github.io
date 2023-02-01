@@ -93,10 +93,6 @@ const WorkProject = ({ currentTheme, project, id }) => {
                         <Image
                             src={project.photo[index]}
                             alt="thumbnail image"
-                            style={{
-                                height: "100%",
-                                width: "100%",
-                            }}
                         />
                         <button
                             onClick={back}
