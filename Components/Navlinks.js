@@ -14,50 +14,50 @@ const Navlinks = () => {
     return (
         <>
             <div className={styles.navlinks}>
-                <Link legacyBehavior={true} href="/">
-                    <a
-                        style={{
-                            opacity:
-                                activeLink === "/" || activeLink === "/#work"
-                                    ? "100%"
-                                    : "80%",
-                        }}
-                    >
-                        Home
-                    </a>
+                <Link
+                    href="/#home"
+                    style={{
+                        opacity:
+                            activeLink === "/" || activeLink === "/#work"
+                                ? "100%"
+                                : "80%",
+                    }}
+                    scroll={false}
+                >
+                    Home
                 </Link>
             </div>
             <div className={styles.navlinks}>
-                <Link legacyBehavior={true} href="/#about">
-                    <a
-                        style={{
-                            opacity: activeLink === "/#about" ? "100%" : "80%",
-                        }}
-                    >
-                        About
-                    </a>
+                <Link
+                    href="/#about"
+                    style={{
+                        opacity: activeLink === "/#about" ? "100%" : "80%",
+                    }}
+                    scroll={false}
+                >
+                    About
                 </Link>
             </div>
             <div className={styles.navlinks}>
-                <Link legacyBehavior={true} href="/work">
-                    <a
-                        style={{
-                            opacity: activeLink === "/work" ? "100%" : "80%",
-                        }}
-                    >
-                        Work
-                    </a>
+                <Link
+                    href="/work/#work"
+                    style={{
+                        opacity: activeLink === "/work" ? "100%" : "80%",
+                    }}
+                    scroll={false}
+                >
+                    Work
                 </Link>
             </div>
             <div className={styles.navlinks}>
-                <Link legacyBehavior={true} href="/contact">
-                    <a
-                        style={{
-                            opacity: activeLink === "/contact" ? "100%" : "80%",
-                        }}
-                    >
-                        Contact
-                    </a>
+                <Link
+                    href="/contact"
+                    style={{
+                        opacity: activeLink === "/contact" ? "100%" : "80%",
+                    }}
+                    scroll={false}
+                >
+                    Contact
                 </Link>
             </div>
         </>

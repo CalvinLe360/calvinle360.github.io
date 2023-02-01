@@ -12,6 +12,7 @@ const HomePage = ({ currentTheme }) => {
     return (
         <div>
             <div
+                id="home"
                 className={styles.homeheading}
                 style={{ backgroundColor: currentTheme.secondary }}
             >

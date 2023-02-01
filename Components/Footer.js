@@ -49,30 +49,20 @@ const Footer = ({ currentTheme }) => {
                 </ul>
                 <ul>
                     <li className={styles.listHeading}>Pages</li>
-                    <Link legacyBehavior={true} href="/">
-                        <a>
-                            <li>Home</li>
-                        </a>
+                    <Link href="/#home">
+                        <li>Home</li>
                     </Link>
-                    <Link legacyBehavior={true} href="/#about">
-                        <a>
-                            <li>About</li>
-                        </a>
+                    <Link href="/#about">
+                        <li>About</li>
                     </Link>
-                    <Link legacyBehavior={true} href="/work">
-                        <a>
-                            <li>Work</li>
-                        </a>
+                    <Link href="/work/#work">
+                        <li>Work</li>
                     </Link>
-                    <Link legacyBehavior={true} href="/contact">
-                        <a>
-                            <li>Contact</li>
-                        </a>
+                    <Link href="/contact">
+                        <li>Contact</li>
                     </Link>
                 </ul>
             </div>
-            {/* <hr style={{ height: '1px', backgroundColor: currentTheme.subtext, border: 'none', opacity: '0.5' }}></hr>
-            <h2 className={styles.footercontent}>Template by Asavari Ambavane</h2> */}
         </div>
     );
 };

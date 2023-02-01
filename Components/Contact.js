@@ -62,7 +62,7 @@ const Contact = ({ currentTheme }) => {
     };
 
     return (
-        <div className={styles.contactWrapper}>
+        <div id="contact" className={styles.contactWrapper}>
             <div className={styles.contactHeading}>
                 <h2 className={styles.contact}>{headings.contact}</h2>
             </div>

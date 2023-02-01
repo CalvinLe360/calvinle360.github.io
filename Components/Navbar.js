@@ -40,10 +40,8 @@ const Navbar = ({ toggleTheme, currentTheme }) => {
                     marginBottom: !drawerVisible ? "0" : "10px",
                 }}
             >
-                <Link legacyBehavior={true} href="/">
-                    <a>
-                        <h2 className={styles.logo}>{userinfo.logoText}</h2>
-                    </a>
+                <Link href="/#home" scroll={false}>
+                    <h2 className={styles.logo}>{userinfo.logoText}</h2>
                 </Link>
                 {!drawerVisible ? (
                     <div style={{ display: "flex" }}>
