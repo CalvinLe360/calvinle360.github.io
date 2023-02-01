@@ -9,13 +9,13 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 function MyApp({ Component, pageProps }) {
-    const [theme, setTheme] = useState("dark");
+    const [theme, setTheme] = useState("light");
 
     useEffect(() => {
         if (localStorage.getItem("theme")) {
             setTheme(localStorage.getItem("theme"));
         } else {
-            setTheme("light");
+            setTheme("dark");
         }
     }, []);
 

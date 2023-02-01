@@ -50,7 +50,7 @@ export const projects = [
             "Any project in any discipline will always come with struggles and frustration, but the end result will always wrap up the experience with gratification. With much appreciation to Asavari Ambavane for developing the template for the website.",
         githubLink: "https://github.com/CalvinLe360/calvinle360.github.io",
         projectLink: "/",
-        tech: ["Next.JS", "CSS"],
+        tech: ["Next.JS", "React", "CSS"],
         photo: WEBSITE,
     },
     {

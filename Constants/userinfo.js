@@ -149,7 +149,7 @@ export const headings = {
 
 export const ctaTexts = {
     //you can customise all the cta texts here.
-    landingCTA: "My work",
+    landingCTA: "My Work",
     workCTA: "View All",
     capabCTA: "Get in Touch",
     educationCTA: "About Me",

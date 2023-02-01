@@ -39,11 +39,13 @@
         "react-dom": "^18.2.0",
         "react-icons": "^4.2.0",
         "react-is": "^18.2.0",
+        "react-scroll": "^1.8.9",
         "react-swipeable": "^6.1.2",
         "styled-components": "^5.3.0"
     },
     "devDependencies": {
         "eslint": "7.29.0",
-        "eslint-config-next": "11.0.0"
+        "eslint-config-next": "11.0.0",
+        "npm-install-peers": "^1.2.2"
     }
 }
