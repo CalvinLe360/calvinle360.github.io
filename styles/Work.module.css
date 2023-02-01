@@ -31,6 +31,7 @@
 }
 
 .card {
+    height: 100%;
     width: 60vmin;
     background-repeat: no-repeat;
     background-size: cover;
