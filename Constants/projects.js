@@ -40,7 +40,7 @@ export const projects = [
         githubLink:
             "https://github.com/CalvinLe360/RockPaperScissors-ComputerVision",
         projectLink:
-            "https://github.com/CalvinLe360/RockPaperScissors-ComputerVision",
+            "https://colab.research.google.com/drive/1_nb_bvIy0lbNOuaehZ_may8SCd6D3l4c?usp=sharing",
         tech: ["Python"],
         photo: ROCKPAPERSCISSORS,
     },
@@ -49,7 +49,7 @@ export const projects = [
         description:
             "Any project in any discipline will always come with struggles and frustration, but the end result will always wrap up the experience with gratification. With much appreciation to Asavari Ambavane for developing the template for the website.",
         githubLink: "https://github.com/CalvinLe360/calvinle360.github.io",
-        projectLink: "/",
+        projectLink: "/#home",
         tech: ["Next.JS", "React", "CSS"],
         photo: WEBSITE,
     },
