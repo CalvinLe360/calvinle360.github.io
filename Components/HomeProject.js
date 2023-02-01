@@ -13,20 +13,20 @@ const HomeProject = ({ currentTheme, project, id }) => {
             }}
         >
             <div className={styles.projectContent}>
-                <div
-                    className={styles.projectIcon}
-                    style={{
-                        color: currentTheme.accent,
-                        backgroundColor: currentTheme.footerColor,
-                        borderColor: currentTheme.accent,
-                    }}
-                >
-                    <Link legacyBehavior={true} href={project.projectLink}>
-                        <a>
+                <Link legacyBehavior={true} href={project.projectLink}>
+                    <a>
+                        <div
+                            className={styles.projectIcon}
+                            style={{
+                                color: currentTheme.accent,
+                                backgroundColor: currentTheme.footerColor,
+                                borderColor: currentTheme.accent,
+                            }}
+                        >
                             <FontAwesomeIcon icon={faTelegramPlane} />
-                        </a>
-                    </Link>
-                </div>
+                        </div>
+                    </a>
+                </Link>
                 <h1 className={styles.projectTitle}>{project.name}</h1>
                 <h2
                     className={styles.projectSubTitle}

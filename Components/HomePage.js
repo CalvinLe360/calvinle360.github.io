@@ -84,13 +84,19 @@ const HomePage = ({ currentTheme }) => {
                 <h1 className={styles.workheading} data-aos="fade-up">
                     {headings.about}
                 </h1>
-                <p
-                    className={styles.aboutText}
-                    style={{ color: currentTheme.subtext }}
-                    data-aos="fade-up"
-                >
-                    {userinfo.about.content}
-                </p>
+                {userinfo.about.content.map((content, key) => {
+                    return (
+                        <p
+                            key={key}
+                            className={styles.aboutText}
+                            style={{ color: currentTheme.subtext }}
+                            data-aos="fade-up"
+                        >
+                            {content}
+                        </p>
+                    );
+                })}
+
                 <div
                     data-aos="fade-up"
                     style={{
