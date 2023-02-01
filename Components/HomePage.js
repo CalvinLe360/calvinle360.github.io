@@ -22,7 +22,7 @@ const HomePage = ({ currentTheme }) => {
                 >
                     {userinfo.greeting.subtitle}
                 </h2>
-                <Link href="#work">
+                <Link legacyBehavior={true} href="#work">
                     <a
                         className={styles.cta1}
                         style={{
@@ -51,7 +51,7 @@ const HomePage = ({ currentTheme }) => {
                     );
                 })}
                 <div style={{ textAlign: "center", paddingBottom: "2rem" }}>
-                    <Link href="/work">
+                    <Link legacyBehavior={true} href="/work">
                         <a
                             className={styles.cta3}
                             style={{
@@ -108,7 +108,11 @@ const HomePage = ({ currentTheme }) => {
                         color: currentTheme.subtext,
                     }}
                 >
-                    <Link href={userinfo.about.resume} target="_blank">
+                    <Link
+                        legacyBehavior={true}
+                        href={userinfo.about.resume}
+                        target="_blank"
+                    >
                         <a
                             className={styles.cta4}
                             style={{
