@@ -70,7 +70,7 @@ export const userinfo = {
             "An experienced programmer aspiring to become even greater.",
             "I first started building applications in C# through Visual Studio. From this, it allowed me to build my foundation of problem solving, expanding my knowledge through fields such as web development and back-end development.",
             "I am eager to learn, and interested in Artificial Intelligence; some of my projects work with statistics to formulate bot decisions, while others use a general decision based algorithm to drive a variety of unique bots.",
-            "I've recently completed my Bachelor of Mathematical and Computer Sciences, during which I've worked part time in the gaming industry, using both Lua and Typescript to code for games played by over half a million people.",
+            "I've completed my Bachelor of Mathematical and Computer Sciences at the University of Adelaide in 2022, during which I've worked part time in the gaming industry, using both Lua and TypeScript to code for games played by over half a million people.",
         ],
         resume: "/resume.pdf", //link your resume here. it can be drive link or any other link
     },
