@@ -112,7 +112,7 @@ export const userinfo = {
                     "Foundation and expertise in Computer Science",
                     "5.8 GPA",
                 ],
-                avatar: "careerImages/universityOfadelaide.png",
+                avatar: "careerImages/universityOfAdelaide.png",
             },
             {
                 time: "Jan 2014",
