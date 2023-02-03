@@ -2,6 +2,7 @@ import React from "react";
 import styles from "../styles/Home.module.css";
 import { userinfo, headings, ctaTexts } from "../Constants/userinfo";
 import Link from "next/link";
+import { Avatar } from "@chakra-ui/react";
 
 const Education = ({ currentTheme }) => {
     return (
@@ -16,29 +17,43 @@ const Education = ({ currentTheme }) => {
                         ? userinfo.education.educationList.map((value, key) => {
                               return (
                                   <li data-aos="fade-up" key={key}>
-                                      <div className={styles.content}>
-                                          <h3
-                                              style={{
-                                                  color: currentTheme.accent,
-                                              }}
-                                          >
-                                              {value.title}
-                                          </h3>
-                                          <p
-                                              style={{
-                                                  color: currentTheme.text,
-                                              }}
-                                          >
-                                              {value.organization}
-                                          </p>
-                                          <p
-                                              style={{
-                                                  color: currentTheme.subtext,
-                                              }}
-                                          >
-                                              {value.description}
-                                          </p>
+                                      <div className={styles.contentFull}>
+                                          <Avatar
+                                              size="lg"
+                                              name={value.avatar}
+                                              src={value.avatar}
+                                          />
+                                          <div className={styles.content}>
+                                              <h3
+                                                  style={{
+                                                      color: currentTheme.accent,
+                                                  }}
+                                              >
+                                                  {value.title}
+                                              </h3>
+                                              <p
+                                                  style={{
+                                                      color: currentTheme.text,
+                                                  }}
+                                              >
+                                                  {value.organization}
+                                              </p>
+                                              {value.description.map(
+                                                  (text, _) => {
+                                                      return (
+                                                          <p
+                                                              style={{
+                                                                  color: currentTheme.subtext,
+                                                              }}
+                                                          >
+                                                              {text}
+                                                          </p>
+                                                      );
+                                                  }
+                                              )}
+                                          </div>
                                       </div>
+
                                       <div
                                           className={styles.time}
                                           style={{

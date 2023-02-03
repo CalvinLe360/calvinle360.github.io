@@ -78,16 +78,51 @@ export const userinfo = {
         visible: true, //set this to false if you want to omit this section
         educationList: [
             {
-                time: "2019 - 2022", //timespan
-                title: "Bachelor of Maths and Computer Sciences", //eg. BTech in Compuster Engineering
-                organization: "University of Adelaide", //eg. VJTI, Mumbai
-                description: "Foundation and expertise in Computer Science", //eg. secured a cgpa of 9.25 in all sems appeared in so far
+                time: "Feb 2023",
+                title: "Software Engineer",
+                organization: "Acacia Systems",
+                description: [
+                    "Developed software specializing in advanced technology such as defence and information processing.",
+                ],
+                avatar: "careerImages/acaciaSystems.jpg",
             },
             {
-                time: "May - Dec 2018",
+                time: "Jan 2022",
+                title: "Software Engineer",
+                organization: "Double Edge Studios",
+                description: [
+                    "Developed Ability Arena, which has found masssive success.",
+                ],
+                avatar: "careerImages/doubleEdgeStudios.png",
+            },
+            {
+                time: "Dec 2020",
+                title: "Software Engineer",
+                organization: "Arcadia Redux",
+                description: [
+                    "Maintained and developed a collection of games with a large playerbase.",
+                ],
+                avatar: "careerImages/arcadiaRedux.png",
+            },
+            {
+                time: "Jan 2019", //timespan
+                title: "Bachelor of Maths and Computer Sciences", //eg. BTech in Compuster Engineering
+                organization: "University of Adelaide", //eg. VJTI, Mumbai
+                description: [
+                    "Foundation and expertise in Computer Science",
+                    "5.8 GPA",
+                ],
+                avatar: "careerImages/universityOfadelaide.png",
+            },
+            {
+                time: "Jan 2014",
                 title: "High School Student",
                 organization: "Mawson Lakes Endeavour College",
-                description: "Allowed great interest in computer technology.",
+                description: [
+                    "Allowed interest in computer technology",
+                    "93.75 ATAR",
+                ],
+                avatar: "careerImages/endeavourCollege.jpg",
             },
             // {
             //     time: "May - Oct 2020",
@@ -141,7 +176,7 @@ export const headings = {
     workMainPage: "Projects",
     capabilities: "Capabilities",
     about: "About Me",
-    education: "Education",
+    education: "Career and Education",
     experience: "Experiences",
     blogs: "I write!",
     contact: "Contact Me",

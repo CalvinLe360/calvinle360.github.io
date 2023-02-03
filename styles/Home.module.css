@@ -218,6 +218,14 @@
     text-align: right;
     clear: both;
 }
+.timeline ul li:nth-child(odd) .contentFull {
+    display: flex;
+    flex-direction: row;
+}
+.timeline ul li:nth-child(even) .contentFull {
+    display: flex;
+    flex-direction: row-reverse;
+}
 .timeline ul li:nth-child(even) {
     float: right;
     text-align: left;
