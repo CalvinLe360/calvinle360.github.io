@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { onMounted, onUnmounted, ref } from "vue";
-import { links } from "../data";
 import { FooterContent } from "./types";
 
 const props = defineProps<{
