@@ -47,8 +47,9 @@ $two-columns-breakpoint: 1170px;
     max-width: $two-columns-breakpoint;
     padding: 2em 0;
     position: relative;
-    width: 95%;
+    width: 100vw;
     color: black;
+    box-sizing: border-box;
 
     @media only screen and (min-width: $two-columns-breakpoint) {
         margin: 3em auto;
@@ -81,7 +82,8 @@ $two-columns-breakpoint: 1170px;
 
     &__element {
         position: relative;
-        margin: 2em 0;
+        box-sizing: border-box;
+        margin: 2em 1em 2em 0;
 
         @media only screen and (min-width: $two-columns-breakpoint) {
             margin: 4em 0;

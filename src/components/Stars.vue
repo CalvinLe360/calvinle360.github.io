@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const count = 50;
+const count = 75;
 </script>
 
 <template>
@@ -28,21 +28,26 @@ body {
 }
 
 .stars {
+    $stars-height: 100vh;
+    $stars-width: 100vw;
+
     position: relative;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: $stars-width;
+    height: $stars-height;
 
     min-height: 100vh;
     background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
+    transform: rotate(-45deg) scale(3);
     overflow: hidden;
     z-index: -1;
-    margin-bottom: -100vh;
+    margin-bottom: -$stars-height;
+    margin-right: -$stars-width;
 }
 
 .star {
-    $star-count: 50;
+    $star-count: 75;
     --star-color: var(--primary-color);
     --star-tail-length: 6em;
     --star-tail-height: 2px;
@@ -66,7 +71,7 @@ body {
     @for $i from 1 through $star-count {
         &:nth-child(#{$i}) {
             --star-tail-length: #{random_range(5em, 7.5em)};
-            --top-offset: #{random_range(5vh, 95vh)};
+            --top-offset: #{random_range(30vh, 70vh)};
             --fall-duration: #{random_range(6, 12s)};
             --fall-delay: #{random_range(0, 10s)};
         }

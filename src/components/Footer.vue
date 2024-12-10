@@ -6,7 +6,7 @@ const props = defineProps<{
     links: FooterContent[];
 }>();
 
-const viewingBufferPx = 10;
+const viewingBufferPx = 70;
 const scrolledToBottom = ref(false);
 
 const onScroll = () => {
@@ -49,8 +49,10 @@ onUnmounted(() => {
     @include mixins.transitions;
 
     display: flex;
+    width: 100vw;
     background-color: rgba(0, 0, 0, 0.555);
     padding: 2rem;
+    box-sizing: border-box;
 
     justify-content: space-evenly;
     opacity: 0;
@@ -63,6 +65,9 @@ onUnmounted(() => {
     &__column {
         p {
             margin: 0;
+            @include mixins.mobile {
+                font-size: 12px;
+            }
         }
     }
 }

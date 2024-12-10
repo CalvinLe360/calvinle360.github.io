@@ -8,8 +8,8 @@ const props = defineProps<{
 </script>
 
 <template>
-    <Stars />
     <div class="splash">
+        <Stars />
         <div class="splash__contents">
             <img
                 src="/img/calvin/profile.jpg"
@@ -17,7 +17,7 @@ const props = defineProps<{
                 class="splash__profile"
             />
             <h1>Calvin Le</h1>
-            <h2>Innovator, Problem Solver, Adventurous</h2>
+            <h2>Innovator, Immersed in Code, Driven by Solutions</h2>
             <div class="splash__svgs">
                 <a
                     v-for="link of props.links"
@@ -39,8 +39,7 @@ const props = defineProps<{
     width: 100vw;
 
     display: flex;
-    align-items: center;
-    justify-content: center;
+    overflow: hidden;
 
     &__profile {
         height: 128px;
@@ -48,10 +47,20 @@ const props = defineProps<{
     }
 
     &__contents {
+        margin: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+
+        h1 {
+            margin: 1rem;
+        }
+
+        h2 {
+            text-align: center;
+            width: 100vw;
+        }
     }
 
     &__svgs {

@@ -9,6 +9,7 @@ const onScroll = () => {
 };
 
 onMounted(() => {
+    onScroll();
     window.addEventListener("scroll", onScroll);
 });
 
@@ -47,6 +48,9 @@ const scrollToTop = () => {
 
     display: flex;
     justify-content: space-between;
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 0 2rem;
 
     position: fixed;
     top: 0;
