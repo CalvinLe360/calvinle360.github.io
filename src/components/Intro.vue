@@ -53,7 +53,7 @@ onMounted(() => {
 <style lang="scss" scoped>
 .introduction {
     padding: 2rem;
-    background-image: url("/calvin/about.jpg");
+    background-image: url("img/calvin/about.jpg");
     background-attachment: fixed;
     background-size: 100%;
     box-sizing: border-box;

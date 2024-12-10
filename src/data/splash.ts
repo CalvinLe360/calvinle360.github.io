@@ -3,22 +3,22 @@ import { links } from './links'
 
 export const splashLinks: SplashLink[] = [
     {
-        iconPath: '/svg/github.svg',
+        iconPath: 'img/svg/github.svg',
         link: links.github,
         tooltip: 'GitHub'
     },
     {
-        iconPath: '/svg/leetcode.svg',
+        iconPath: 'img/svg/leetcode.svg',
         link: links.leetcode,
         tooltip: 'LeetCode'
     },
     {
-        iconPath: '/svg/linkedin.svg',
+        iconPath: 'img/svg/linkedin.svg',
         link: links.linkedin,
         tooltip: 'LinkedIn'
     },
     {
-        iconPath: '/svg/gmail.svg',
+        iconPath: 'img/svg/gmail.svg',
         link: links.email,
         tooltip: 'calvinle360@gmail.com'
     },

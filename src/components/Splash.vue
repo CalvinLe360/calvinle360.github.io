@@ -12,7 +12,7 @@ const props = defineProps<{
     <div class="splash">
         <div class="splash__contents">
             <img
-                src="/calvin/profile.jpg"
+                src="/img/calvin/profile.jpg"
                 alt="Calvin Le"
                 class="splash__profile"
             />

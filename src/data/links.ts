@@ -8,7 +8,7 @@ export const links = {
     abilityArena: 'https://www.abilityarena.com/',
     overthrow: 'https://steamcommunity.com/sharedfiles/filedetails?id=2760533777',
     chc: 'https://steamcommunity.com/sharedfiles/filedetails/?id=2141071809',
-    resume: '/resume-anonymous.pdf'
+    resume: 'assets/resume-anonymous.pdf'
 }
 
 export const footerContent: FooterContent[] = [
