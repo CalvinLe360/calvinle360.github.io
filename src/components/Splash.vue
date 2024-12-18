@@ -17,17 +17,25 @@ const props = defineProps<{
                 class="splash__profile"
             />
             <h1>Calvin Le</h1>
-            <h2>Innovator, Immersed in Code, Driven by Solutions</h2>
-            <div class="splash__svgs">
+            <h2>Software Engineer</h2>
+            <h2>Building simple and effective solutions to complex problems</h2>
+            <div class="splash__link">
                 <a
                     v-for="link of props.links"
                     :href="link.link"
                     target="_blank"
                 >
                     <img :src="link.iconPath" />
+                    <div class="splash__link--tooltip">
+                        <div class="splash__link--tooltip-pos">
+                            {{ link.tooltip }}
+                        </div>
+                    </div>
                 </a>
             </div>
         </div>
+
+        <div class="splash__scroll-down">ᐯ</div>
     </div>
 </template>
 
@@ -37,6 +45,7 @@ const props = defineProps<{
 .splash {
     height: 100vh;
     width: 100vw;
+    box-sizing: content-box;
 
     display: flex;
     overflow: hidden;
@@ -63,7 +72,7 @@ const props = defineProps<{
         }
     }
 
-    &__svgs {
+    &__link {
         display: flex;
 
         a > img {
@@ -82,6 +91,46 @@ const props = defineProps<{
                 background-color: green;
             }
         }
+
+        &--tooltip {
+            @include mixins.transitions;
+            visibility: hidden;
+            opacity: 0;
+
+            position: absolute;
+        }
+
+        &--tooltip-pos {
+            background-color: rgb(5, 5, 5);
+            border-radius: 6px;
+            padding: 4px;
+        }
+
+        a:hover &--tooltip {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
+    &__scroll-down {
+        position: absolute;
+        pointer-events: none;
+
+        text-align: center;
+        font-size: 48px;
+
+        left: 0;
+        right: 0;
+        top: 90vh;
+        width: 100%;
+
+        animation: arrow-movement 1000ms ease-in-out infinite;
+    }
+}
+
+@keyframes arrow-movement {
+    50% {
+        top: 85vh;
     }
 }
 </style>

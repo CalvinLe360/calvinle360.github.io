@@ -39,7 +39,6 @@ body {
 
     min-height: 100vh;
     background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
-    transform: rotate(-45deg) scale(3);
     overflow: hidden;
     z-index: -1;
     margin-bottom: -$stars-height;
@@ -52,26 +51,26 @@ body {
     --star-tail-length: 6em;
     --star-tail-height: 2px;
     --star-width: calc(var(--star-tail-length) / 6);
-    --fall-duration: 9s;
+    --fall-duration: 15s;
     --tail-fade-duration: var(--fall-duration);
 
     position: absolute;
-    top: var(--top-offset);
-    left: 0;
+    top: -10vh;
+    left: var(--left-offset);
     width: var(--star-tail-length);
     height: var(--star-tail-height);
     color: var(--star-color);
     background: linear-gradient(45deg, currentColor, transparent);
     border-radius: 50%;
     filter: drop-shadow(0 0 6px currentColor);
-    transform: translate3d(104em, 0, 0);
+    transform: rotate(-45deg);
     animation: fall var(--fall-duration) var(--fall-delay) linear infinite,
         tail-fade var(--tail-fade-duration) var(--fall-delay) ease-out infinite;
 
     @for $i from 1 through $star-count {
         &:nth-child(#{$i}) {
             --star-tail-length: #{random_range(5em, 7.5em)};
-            --top-offset: #{random_range(30vh, 70vh)};
+            --left-offset: #{random_range(20vw, 150vw)};
             --fall-duration: #{random_range(6, 12s)};
             --fall-delay: #{random_range(0, 10s)};
         }
@@ -106,7 +105,7 @@ body {
 
 @keyframes fall {
     to {
-        transform: translate3d(-30em, 0, 0);
+        transform: translate3d(-150em, 150em, 0) rotate(-45deg);
     }
 }
 

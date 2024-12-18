@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import Splash from "./components/Splash.vue";
 import Navbar from "./components/Navbar.vue";
-import Introduction from "./components/Intro.vue";
+import About from "./components/About.vue";
 import Timeline from "./components/Timeline.vue";
 import Footer from "./components/Footer.vue";
 
@@ -10,8 +10,8 @@ import { footerContent, splashLinks, timelineData } from "./data";
 
 <template>
     <Splash :links="splashLinks" />
-    <Introduction />
     <Timeline :content="timelineData" />
+    <About />
     <Footer :links="footerContent" />
 
     <Navbar />

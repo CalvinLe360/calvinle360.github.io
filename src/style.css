@@ -30,6 +30,21 @@ body {
     overflow-x: hidden;
 }
 
+/* n scrollbar! */
+:root::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+:root {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+.scrollable-content {
+    -ms-overflow-style: none;
+}
+
 h1 {
     font-size: 3.2em;
     line-height: 1.1;

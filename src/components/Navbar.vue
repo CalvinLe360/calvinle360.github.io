@@ -45,12 +45,12 @@ const scrollToTop = () => {
 
 .navbar {
     @include mixins.transitions;
+    --padding: 2rem;
 
     display: flex;
     justify-content: space-between;
-    width: 100vw;
-    box-sizing: border-box;
-    padding: 0 2rem;
+    width: calc(100vw - 2 * var(--padding));
+    padding: 0 var(--padding);
 
     position: fixed;
     top: 0;

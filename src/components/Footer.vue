@@ -47,12 +47,12 @@ onUnmounted(() => {
 
 .footer {
     @include mixins.transitions;
+    --padding: 2rem;
 
     display: flex;
-    width: 100vw;
+    width: calc(100vw - 2 * var(--padding));
     background-color: rgba(0, 0, 0, 0.555);
-    padding: 2rem;
-    box-sizing: border-box;
+    padding: var(--padding);
 
     justify-content: space-evenly;
     opacity: 0;

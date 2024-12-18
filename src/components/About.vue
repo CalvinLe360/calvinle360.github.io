@@ -28,7 +28,7 @@ onMounted(() => {
 </script>
 
 <template>
-    <div class="introduction">
+    <div class="about">
         <h1>{{ greeting }}</h1>
         <p>
             I'm Calvin! I'm passionate about programming and thrive on solving
@@ -51,13 +51,12 @@ onMounted(() => {
 </template>
 
 <style lang="scss" scoped>
-.introduction {
+.about {
     padding: 2rem;
     background-image: url("/img/calvin/about.jpg");
     background-attachment: fixed;
     background-size: 100%;
-    box-sizing: border-box;
-    width: 100vw;
+    width: calc(100vw - 4rem);
 
     background-blend-mode: multiply;
     background-color: rgb(94, 94, 94);

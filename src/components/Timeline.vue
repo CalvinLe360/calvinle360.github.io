@@ -38,8 +38,7 @@ $two-columns-breakpoint: 1170px;
     margin: 0;
 
     padding: 2rem;
-    width: 100vw;
-    box-sizing: border-box;
+    width: calc(100vw - 4rem);
 }
 
 .timeline {
@@ -47,9 +46,8 @@ $two-columns-breakpoint: 1170px;
     max-width: $two-columns-breakpoint;
     padding: 2em 0;
     position: relative;
-    width: 100vw;
+    width: calc(100vw - 4em);
     color: black;
-    box-sizing: border-box;
 
     @media only screen and (min-width: $two-columns-breakpoint) {
         margin: 3em auto;
@@ -82,7 +80,7 @@ $two-columns-breakpoint: 1170px;
 
     &__element {
         position: relative;
-        box-sizing: border-box;
+        box-sizing: unset;
         margin: 2em 1em 2em 0;
 
         @media only screen and (min-width: $two-columns-breakpoint) {
